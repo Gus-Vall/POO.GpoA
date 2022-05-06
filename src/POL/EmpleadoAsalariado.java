@@ -33,16 +33,28 @@ public class EmpleadoAsalariado extends Empleado {
     public double obtenerSalarioSemanal(){
         return salarioSemanal;
     }
+    @Override
+    public double obtenerMontoPago(){
+        
+    return obtenerSalarioSemanal();
+        
+    }
     
     // se sobreescriben los metodos de ingreso "metodo abstracto" para calcular los ingresos
-    @Override
+    /*@Override
     public double ingresos(){
         return obtenerSalarioSemanal();
     
     }
+    */
     @Override
     public String toString(){
         return String.format("Empleado asalariado:  %s\n%s: $%,.2f",super.toString(),"Salario semanal",obtenerSalarioSemanal());
+    }
+
+    @Override
+    public double ingresos() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

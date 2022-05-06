@@ -12,7 +12,7 @@ package POL;
  * @author jjggs_000
  */
 // se antepone abstract
-public abstract class Empleado {
+public abstract class Empleado implements PorPagar{
     
     private String primerNombre;
     private String apellidoPaterno;
